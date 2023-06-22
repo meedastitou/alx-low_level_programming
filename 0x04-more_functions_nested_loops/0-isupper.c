@@ -5,7 +5,7 @@
  * Return: 0 or 1 
  */
 
-int _isuppser(char c)
+int _isuppser(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
