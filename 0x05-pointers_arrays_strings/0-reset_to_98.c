@@ -1,5 +1,5 @@
 
-/* reset_to_98 - update value to 98
+/* reset_to_98 _ update value of pointer 
  * @n: a pointer to int
  *
  */
