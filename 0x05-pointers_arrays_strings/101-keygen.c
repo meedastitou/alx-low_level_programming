@@ -5,7 +5,6 @@
 int main(void)
 {
 	char s[20];
-	char tmp;
 	int i, r;
 
 	for (i = 0 ; i < 20 ; i++)
