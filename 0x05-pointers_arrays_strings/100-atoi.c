@@ -25,6 +25,7 @@ int _atoi(char *s)
 			}
 			i++;
 			nb = (nb * ten) + (*c - '0');
+			ten = 10;
 			
 		}
 		else if (i)
