@@ -24,7 +24,7 @@ int _atoi(char *s)
 					continue;
 				}
 					
-				nb = (nb * ten) + (*c + '0');
+				nb = (nb * ten) + (*c - '0');
 				continue;
 					
 			}
