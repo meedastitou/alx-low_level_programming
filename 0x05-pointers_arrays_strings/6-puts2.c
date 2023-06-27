@@ -11,7 +11,7 @@ void puts2(char *str)
 
 	for (c = str; *c != '\0' ; c ++)
 	{
-		if( *c-- == '\0') 
+	 	if( *(c - 1) == '\0') 
 			break;
 		_putchar(*c);
 	}
