@@ -5,13 +5,14 @@
 int main(void)
 {
 	char *s = "Tada! Congrats";
+	char tmp;
 	int i, r, size;
 
 	size = (int)strlen(s);
 	for (i = 0 ; i < size ; i++)
 	{
+		tmp = s[i];
 		r = rand() % size;
-		char tmp = s[i];
 		s[i] = s[r];
 		s[r] = tmp;	
 	}
