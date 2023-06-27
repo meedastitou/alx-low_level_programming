@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	char *c;
-	int first_time, nb, ten, curr;
+	int neg,first_time, nb, ten, curr;
 
 	nb = curr = 0;
 	first_time = 0;
@@ -18,23 +18,19 @@ int _atoi(char *s)
 		if ( *c >= '0' && *c <= '9')
 		{
 			first_time = 1;
-			if( curr == 0)
-				nb = *c - '0';
-			else
-			{
-				if(*(c + (curr - 1)) == '-')
-					nb = -1*(*c - '0');
 
-				else	
-					nb = (nb * ten ) + (*c - '0');
+			if( curr > 0 && *(c + (curr - 1)))
+				neg = 1;
+			
+			nb = (nb * ten ) + (*c - '0');
 
-
-			}
 
 		}
 		else if( first_time)
 			break;
 	}
+	if( neg ) return (-nb);
+
 	return (nb);
 
 }
