@@ -8,9 +8,9 @@
 int _atoi(char *s)
 {
 	char *c;
-	int i, nb, ten, curr;
+	int nb, ten, curr;
 
-	i = nb = curr = 0;
+	nb = curr = 0;
 	ten = 10;
 	for (c = s; *c != '\0' ; c++,curr++)
 	{
