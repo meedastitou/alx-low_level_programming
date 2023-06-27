@@ -12,7 +12,7 @@ int _atoi(char *s)
 
 	i = nb = curr = 0;
 	ten = 10;
-	for (c = s; *c != '\0' ; c++,cur++)
+	for (c = s; *c != '\0' ; c++,curr++)
 	{
 		if ( *c >= '0' && *c <= '9')
 		{
