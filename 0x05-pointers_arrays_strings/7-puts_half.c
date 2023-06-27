@@ -13,7 +13,7 @@ void puts_half(char *str)
 	for (c = str; *c != '\0' ; c++)
 		;
 	len = c - str;
-	if (len % 2 != 0) 
+	if (len % 2 != 0)
 		_putchar(str[len - 1]);
 	else
 	{
