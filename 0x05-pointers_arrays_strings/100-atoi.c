@@ -10,7 +10,7 @@ int _atoi(char *s)
 	char *c;
 	int neg,first_time, nb, ten, curr;
 
-	nb = curr = 0;
+	neg = nb = curr = 0;
 	first_time = 0;
 	ten = 10;
 	for (c = s; *c != '\0' ; c++,curr++)
