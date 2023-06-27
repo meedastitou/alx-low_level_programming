@@ -4,17 +4,17 @@
 
 int main(void)
 {
-	char s[15];
+	char s[100];
 	int i, r;
 
 	srand(time(NULL));
 
-	for (i = 0 ; i < 15 ; i++)
+	for (i = 0 ; i < 100 ; i++)
 	{
 		r = rand() % 126;
 		s[i] = (char)r;	
 	}
-	s[i] = '\0';
+	s[99] = '\0';
 	printf("%s", s);
 	return (0);
 }
