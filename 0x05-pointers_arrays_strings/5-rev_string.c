@@ -7,12 +7,12 @@
 
 void rev_string(char *s)
 {	
-	char cd, cf;
+	int cd, cf;
 
-	for (cd = s, cf = _strlen(s) - 1 ; cd < cf ; cd++, cf--)
+	for (cd= 0, cf = _strlen(s) - 1 ; cd < cf ; cd++, cf--)
 	{
-		char tmp = cd;
-		cd = cf;
-		cf = tmp;
+		char tmp = *(s + cd);
+		*(s + cd) = *(s + cf);
+		*(s + cf) = tmp;
 	}	
 }
