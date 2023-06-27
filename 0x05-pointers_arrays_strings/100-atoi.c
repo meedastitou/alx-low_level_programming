@@ -22,11 +22,12 @@ int _atoi(char *s)
 					nb = (nb * ten) - (*c - '0');
 				else if (*(c + (curr - 1)) == '+')
 					nb = (nb * ten) + (*c - '0');
-				i++;
-			}
-			else
-				nb = (nb * ten) + (*c - '0');
 			
+			}
+			else{
+				i++;
+				nb = (nb * ten) + (*c - '0');
+			}
 		}
 		else if (i)
 			break;
