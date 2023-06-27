@@ -9,7 +9,7 @@ int main(void)
 
 	srand(time(NULL));
 
-	for (i = 0 ; i < 20 ; i++)
+	for (i = 0 ; i < 15 ; i++)
 	{
 		r = rand() % 126;
 		s[i] = (char)r;	
