@@ -19,11 +19,11 @@ int _atoi(char *s)
 		{
 			first_time = 1;
 			if( curr == 0)
-				nb = (nb * ten ) + (*c - '0');
+				nb = *c - '0';
 			else
 			{
 				if(*(c + curr - 1) == '-')
-					nb = (nb * ten ) - (*c - '0');
+					nb = -1*(*c - '0');
 
 				else	
 					nb = (nb * ten ) + (*c - '0');
