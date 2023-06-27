@@ -29,7 +29,7 @@ int _atoi(char *s)
 					
 			}
 			nb = (nb * ten) + (*c - '0');
-		}else if(firt_time == 1) 
+		}else if(first_time == 1) 
 			break;
 		
 	}
