@@ -19,9 +19,9 @@ int _atoi(char *s)
 			if (!i) 
 			{
 				if(*c == '-')
-					ten = -1;
+					ten = -10;
 				else if(*c == '+')
-					ten = +1;
+					ten = +10;
 			}
 			i++;
 			nb = (nb * ten) + (*c - '0');
