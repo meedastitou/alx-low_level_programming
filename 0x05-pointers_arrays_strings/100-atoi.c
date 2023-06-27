@@ -8,19 +8,19 @@
 int _atoi(char *s)
 {
 	char *c;
-	int i, nb, ten;
+	int i, nb, ten, curr;
 
-	i = nb = 0;
+	i = nb = curr = 0;
 	ten = 10;
-	for (c = s; *c != '\0' ; c++)
+	for (c = s; *c != '\0' ; c++,cur++)
 	{
 		if ( *c >= '0' && *c <= '9')
 		{
 			if (!i) 
 			{
-				if(*c == '-')
+				if (*(c + (curr - 1 )) == '-')
 					ten = -10;
-				else if(*c == '+')
+				else if (*(c + (curr - 1)) == '+')
 					ten = +10;
 			}
 			i++;
