@@ -18,20 +18,22 @@ int _atoi(char *s)
 		if ( *c >= '0' && *c <= '9')
 		{
 			first_time = 1;
-			if (curr != 0 ){
-				if( *(c + curr -1)== '-'){
-					nb = (nb * ten) - (*c - '0');
-					continue;
-				}
-					
-				nb = (nb * ten) + (*c - '0');
-				continue;
-					
+			if( curr == 0)
+				nb = (nb * ten ) + (*c - '0');
+			else
+			{
+				if(*(c + curr - 1) == '-')
+					nb = (nb * ten ) - (*c - '0');
+
+				else	
+					nb = (nb * ten ) + (*c - '0');
+
+
 			}
-			nb = (nb * ten) + (*c - '0');
-		}else if(first_time == 1) 
+
+		}
+		else if( first_time)
 			break;
-		
 	}
 	return (nb);
 
