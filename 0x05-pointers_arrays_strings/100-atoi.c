@@ -21,7 +21,7 @@ int _atoi(char *s)
 				if (*(c + (curr - 1 )) == '-')
 					nb = (nb * ten) - (*c - '0');
 				else if (*(c + (curr - 1)) == '+')
-					nb = (nb * ten) + (*c = '0');
+					nb = (nb * ten) + (*c - '0');
 				i++;
 			}
 			else
