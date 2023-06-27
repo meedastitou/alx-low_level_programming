@@ -9,20 +9,19 @@
 int _atoi(char *s)
 {
 	char *c;
-	int pos, first_time, nb, curr, tmp;
+	int pos, first_time, nb, curr;
 
 	nb = curr = first_time = 0;
-	pos = -1;
+	pos = 1;
 	for (c = s ; *c != '\0' ; c++, curr++)
 	{
-		if (*c == '+' && first_time == 0)
+		if (*c == '-' && first_time == 0)
 			pos *= -1;
 
 		if (*c >= '0' && *c <= '9')
 		{
 			first_time = 1;
-			tmp = nb * 10;
-			nb = tmp - (*c - '0');
+			nb = nb + (*c - '0');
 
 
 		}
