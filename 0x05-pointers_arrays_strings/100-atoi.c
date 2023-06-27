@@ -22,7 +22,7 @@ int _atoi(char *s)
 				nb = *c - '0';
 			else
 			{
-				if(*(c + curr - 1) == '-')
+				if(*(c + (curr - 1)) == '-')
 					nb = -1*(*c - '0');
 
 				else	
