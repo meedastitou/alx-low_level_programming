@@ -21,7 +21,7 @@ int _atoi(char *s)
 		if (*c >= '0' && *c <= '9')
 		{
 			first_time = 1;
-			nb = nb + (*c - '0');
+			nb = (nb * 10) + (*c - '0');
 
 
 		}
