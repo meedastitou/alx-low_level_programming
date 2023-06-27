@@ -16,7 +16,7 @@ int _atoi(char *s)
 	{
 		if ( *c >= '0' && *c <= '9')
 		{
-			if (!i) 
+			if (!i && curr != 0) 
 			{
 				if (*(c + (curr - 1 )) == '-')
 					nb = (nb * ten) - (*c - '0');
