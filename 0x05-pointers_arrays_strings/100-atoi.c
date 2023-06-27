@@ -19,13 +19,13 @@ int _atoi(char *s)
 			if (!i) 
 			{
 				if (*(c + (curr - 1 )) == '-')
-					ten = -10;
+					nb = (nb * ten) - (*c - '0');
 				else if (*(c + (curr - 1)) == '+')
-					ten = +10;
+					nb = (nb * ten) + (*c = '0')
+				i++;
 			}
-			i++;
-			nb = (nb * ten) + (*c - '0');
-			ten = 10;
+			else
+				nb = (nb * ten) + (*c - '0');
 			
 		}
 		else if (i)
