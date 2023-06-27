@@ -9,11 +9,11 @@
 int _atoi(char *s)
 {
 	char *c;
-	int pos, first_time, nb, curr;
+	int pos, first_time, nb;
 
-	nb = curr = first_time = 0;
-	pos = 1;
-	for (c = s ; *c != '\0' ; c++, curr++)
+	nb = first_time = 0;
+	pos = -1;
+	for (c = s ; *c != '\0' ; c++)
 	{
 		if (*c == '-' && first_time == 0)
 			pos *= -1;
@@ -21,7 +21,8 @@ int _atoi(char *s)
 		if (*c >= '0' && *c <= '9')
 		{
 			first_time = 1;
-			nb = (nb * 10) + (*c - '0');
+			tmp = nb * 10
+			nb = tmp - (*c - '0');
 
 
 		}
