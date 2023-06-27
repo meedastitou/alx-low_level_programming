@@ -5,11 +5,12 @@
 int main(void)
 {
 	char *s = "Tada! Congrats";
-	int i,r;
+	int i, r, size;
 
-	for (i = 0 ; i < strlen(s) ; i++)
+	size = (int)strlen(s);
+	for (i = 0 ; i < size ; i++)
 	{
-		r = rand() % strlen(s);
+		r = rand() % size;
 		char tmp = s[i];
 		s[i] = s[r];
 		s[r] = tmp;	
