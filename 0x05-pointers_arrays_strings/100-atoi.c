@@ -16,21 +16,14 @@ int _atoi(char *s)
 	{
 		if ( *c >= '0' && *c <= '9')
 		{
-			if (!i && curr != 0) 
-			{
-				if (*(c + (curr - 1 )) == '-')
+			if (curr != 0 ){
+				if( *(c + curr -1 )== '-')
 					nb = (nb * ten) - (*c - '0');
-				else if (*(c + (curr - 1)) == '+')
-					nb = (nb * ten) + (*c - '0');
-			
+				
+				continue;
 			}
-			else{
-				i++;
-				nb = (nb * ten) + (*c - '0');
-			}
+			nb = (nb * ten) + (*c - '0');
 		}
-		else if (i)
-			break;
 		
 	}
 	return (nb);
