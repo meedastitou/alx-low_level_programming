@@ -7,6 +7,7 @@
  */
 int _strlen(char *s)
 {
-	for(char *c = s ; *c != '\0'; c++ );
+	char *c;
+	for(c = s ; *c != '\0'; c++ );
 	return c - s;
 }
