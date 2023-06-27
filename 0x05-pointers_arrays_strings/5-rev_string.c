@@ -6,10 +6,18 @@
  */
 
 void rev_string(char *s)
-{	
+{
+	char *c;
+	int len, i;
+        
+	for (c = s ; *c != '\0' ; c++)
+		;
+       
+       	len = c - s;
+
 	int cd, cf;
 
-	for (cd= 0, cf = _strlen(s) - 1 ; cd < cf ; cd++, cf--)
+	for (cd= 0, cf = len - 1 ; cd < cf ; cd++, cf--)
 	{
 		char tmp = *(s + cd);
 		*(s + cd) = *(s + cf);
