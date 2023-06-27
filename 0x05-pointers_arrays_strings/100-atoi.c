@@ -8,11 +8,10 @@
 int _atoi(char *s)
 {
 	char *c;
-	int neg,first_time, nb, ten, curr;
+	int neg,first_time, nb, curr;
 
 	neg = nb = curr = 0;
 	first_time = 0;
-	ten = 10;
 	for (c = s; *c != '\0' ; c++,curr++)
 	{
 		if ( *c >= '0' && *c <= '9')
@@ -22,7 +21,7 @@ int _atoi(char *s)
 			if( curr > 0 && *(s + (curr - 1)) == '-')
 				neg = 1;
 			
-			nb = (nb * ten ) + (*c - '0');
+			nb = (nb * 10 ) + (*c - '0');
 
 
 		}
