@@ -25,6 +25,7 @@ int _atoi(char *s)
 				continue;
 			}
 			nb = (nb * ten) + (*c - '0');
+			first_time++;
 		}
 		
 	}
