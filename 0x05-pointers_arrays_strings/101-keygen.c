@@ -4,17 +4,14 @@
 
 int main(void)
 {
-	char *s = "Tada! Congrats";
+	char s[20];
 	char tmp;
-	int i, r, size;
+	int i, r;
 
-	size = (int)strlen(s);
-	for (i = 0 ; i < size ; i++)
+	for (i = 0 ; i < 20 ; i++)
 	{
-		tmp = s[i];
-		r = rand() % size;
-		s[i] = s[r];
-		s[r] = tmp;	
+		r = rand() % 70;
+		s[i] = (char)r;	
 	}
 	printf("%s", s);
 
