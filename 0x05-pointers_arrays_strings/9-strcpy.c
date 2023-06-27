@@ -10,7 +10,8 @@
 char *_strcpy(char *dest, char *src)
 {
 	char *c1,*c2;
-	for ( c1 = src,c2 = dest ; *c1 != '\n' ; c1++,c2++)
+
+	for ( c1 = src, c2 = dest ; *c1 != '\0' ; c1++, c2++)
 		*(dest + c2) = *c1;
 
 	*(dest + c2) = '\0';
