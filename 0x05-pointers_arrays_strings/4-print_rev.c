@@ -5,17 +5,16 @@
  * @s: string
  */
 
-
 void print_rev(char *s)
 {
 	char *c;
-	int i;
+	int len, i;
         for (c = s; *c != '\0'; c++)
                 ;
        
-       	i = c - s;
+       	len = c - s;
 
-	for (i = _strlen(s) ; i < 0 ; i--)
+	for (i = len ; i < 0 ; i--)
 		_putchar(*(s + i));
 
 }
