@@ -19,7 +19,7 @@ int _atoi(char *s)
 		{
 			first_time = 1;
 
-			if( curr > 0 && *(c + (curr - 1)))
+			if( curr > 0 && *(c + (curr - 1))=='-')
 				neg = 1;
 			
 			nb = (nb * ten ) + (*c - '0');
