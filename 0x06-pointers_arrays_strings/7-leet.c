@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		for (j = 0 ; j < 8 ; j++)
 		{
-			if ((s[i] == tab[j] || s[i] == tab[j] - 32) && tab[j] != ' ')
+			if ((s[i] == tab[j] || s[i] == (tab[j] - 32)) && tab[j] != ' ')
 				s[i] = j;
 		}
 
