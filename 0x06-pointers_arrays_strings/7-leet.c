@@ -8,14 +8,14 @@
 
 char *leet(char *s)
 {
-	char tab[9] = {'o', 'l', ' ', 'e', 'a', ' ', ' ', 't','\0'};
+	char tab[] = {'o', 'l', ' ', 'e', 'a', ' ', ' ', 't'};
 	int i, j;
 
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
 		for (j = 0 ; j < 8 ; j++)
 		{
-			if (s[i] == s[j] && s[j] != ' ')
+			if (s[i] == tab[j] && tab[j] != ' ')
 				s[i] = j;
 		}
 
