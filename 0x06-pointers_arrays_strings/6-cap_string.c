@@ -14,7 +14,7 @@ char *cap_string(char *s)
 	i++;
 	for (; s[i] != '\0' ; i++)
 	{
-		if (s[i] != ' ' && s[i - 1] == ' ')
+		if (s[i - 1] == ' ' || s[i - 1] == '\t' || s[i - 1] == '\n')
 			s[i] -= 32;
 	}
 	return (s);
