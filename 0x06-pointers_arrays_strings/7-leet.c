@@ -8,7 +8,7 @@
 
 char *leet(char *s)
 {
-	char tab[] = {'o', 'l', ' ', 'e', 'a', ' ', ' ', 't'};
+	char tab[8] = {'o', 'l', ' ', 'e', 'a', ' ', ' ', 't'};
 	int i, j;
 
 	for (i = 0 ; s[i] != '\0' ; i++)
