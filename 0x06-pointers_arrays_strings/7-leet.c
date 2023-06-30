@@ -8,15 +8,16 @@
 
 char *leet(char *s)
 {
-	char tab[] = {'o', 'l', ' ', 'e', 'a', ' ', ' ', 't'};
+	char *tab1  = "oOlLeEaAtT";
+	char *tab2  = "0011334477";
 	int i, j;
 
 	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-		for (j = 0 ; j < 8 ; j++)
+		for (j = 0 ; j < 10 ; j++)
 		{
-			if ((s[i] == tab[j] || s[i] == (tab[j] - 32)) && tab[j] != ' ')
-				s[i] = j;
+			if (s[i] == tab1[j])
+				s[i] = tab2[j];
 		}
 
 	}
