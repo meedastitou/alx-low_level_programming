@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 		if (*c1 > *c2)
 			return (1);
 	}
-	if(c2 == '\0')
+	if(*c2 == '\0')
 	       	return 0;
 	
 	return (-1);
