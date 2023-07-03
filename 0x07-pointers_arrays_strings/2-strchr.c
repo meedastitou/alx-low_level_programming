@@ -4,7 +4,7 @@
  * _strchr - occurence
  * @s: specified string
  * @c: caracter
- * Retrun: pointer to occurence string
+ * Return: pointer to occurence string
  */
 
 char *_strchr(char *s, char c)
