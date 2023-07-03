@@ -3,7 +3,6 @@
 char *_strchr(char *s, char c)
 {
 	char *sh;
-	int i;
 
 	for (sh = s ; sh[i] != '\0' ; sh++)
 	{
