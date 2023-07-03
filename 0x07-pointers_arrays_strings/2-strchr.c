@@ -1,13 +1,20 @@
 #include "main.h"
 
+/**
+ * _strchr - occurence
+ * @s: specified string
+ * @c: caracter
+ * Retrun: pointer to occurence string
+ */
+
 char *_strchr(char *s, char c)
 {
-	char *sh;
+	int i;
 
-	for (sh = s ; *sh != '\0' ; sh++)
+	for (i = 0 ; s[i] != '\0' ; i++)
 	{
-		if (*sh == c)
-			return (sh);
+		if (s[i] == c)
+			return (s + i);
 	}
 
 	return (NULL);
