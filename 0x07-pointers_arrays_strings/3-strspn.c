@@ -25,6 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (ok == 0)
+			return (v);
 	}
 
 	return (v);
