@@ -3,7 +3,7 @@
 /**
  * _strspn - number of bytes in the initial s
  * @s: input
- * @accepr: input
+ * @accept: input
  * Return: unsigned int
  */
 
@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (accept[n] == s[i])
 				v++;
-		}		
+		}
 
 	}
 	return (v);
